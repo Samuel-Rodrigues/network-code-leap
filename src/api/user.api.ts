@@ -4,7 +4,7 @@ export const createUserAccountReq = async ({
   email,
   password,
   username,
-}: FormLogin) => {
+}: FormLogin): Promise<User> => {
   const response = await userFireBaseAuthServices.createUser({
     email,
     password,
@@ -20,7 +20,10 @@ export const createUserAccountReq = async ({
   return user;
 };
 
-export const signInReq = async ({ email, password }: FormLogin) => {
+export const signInReq = async ({
+  email,
+  password,
+}: FormLogin): Promise<User> => {
   const response = await userFireBaseAuthServices.signIn({ email, password });
   const { username } = await userFireStoreService.getUserDocumentByEmail(email);
 
