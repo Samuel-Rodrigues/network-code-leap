@@ -9,11 +9,11 @@
   <tr>
 <td>
 
-![create an account](https://user-images.githubusercontent.com/28707053/189486143-3b036334-9864-4982-bd40-b8005d462101.png)
+![home](https://user-images.githubusercontent.com/28707053/189492452-f6e655e9-4e6c-4456-b3e6-f779a491c38b.png)
 </td>
 <td>
 
-![guest mode](https://user-images.githubusercontent.com/28707053/189486184-66c4d689-dcbe-4434-a122-e31d6237ecd7.png)
+![guest mode](https://user-images.githubusercontent.com/28707053/189492469-01592f0e-792f-4f6e-a65d-827b41b85a6e.png)
 </td>
 <td>
 
@@ -39,7 +39,7 @@
   <tr>
 <td>
 
-![Screen Shot 2022-09-10 at 10 15 44](https://user-images.githubusercontent.com/28707053/189486371-ff822a43-cfbc-4f0e-8807-f2f4b20a6b09.png)
+![Screen Shot 2022-09-10 at 12 56 37](https://user-images.githubusercontent.com/28707053/189492533-f5ef0c15-84fd-4765-bf22-9edde127b46d.png)
 </td>
 <td>
 
@@ -104,7 +104,7 @@ $ git clone https://github.com/Samuel-Rodrigues/network-code-leap.git
 $ npm install
 ```
 
-- Instale dependências do IOS
+- Instale as dependências do IOS
 
 ```bash
 $ cd ios && pod install && cd ..
@@ -117,7 +117,7 @@ $ cd ios && pod install && cd ..
 $ npm run android
 
 #com IOS
-npm run ios
+$ npm run ios
 ```
 
 <br/>
@@ -139,7 +139,7 @@ A arquitetura deste projeto foi pensada para ser escalável e duradoura. Segue u
 - [SKD atualizada](https://docs.expo.dev/development/compatibility/) com as mais `novas` `features` do `react-native`
 - `Acesso` aos projetos `Android` e `IOS` (expo bare workflow)
 - Documentação recheada e [APIs](https://docs.expo.dev/versions/latest/) `frequentimente atualizadas`
-- Não vi `nenhuma desvantagem` em relação ao `react-native CLI`
+- Não observei `nenhuma desvantagem` em relação ao `react-native CLI`
 
 ### [Navigation](https://reactnavigation.org/docs/getting-started/)
 
