@@ -1,8 +1,9 @@
 import React from 'react';
 import { Keyboard, TouchableWithoutFeedback } from 'react-native';
+
 import { Scroll, View, Wrapper } from './styles';
 
-type Props = { scrollEnable?: boolean; children: any };
+type Props = { scrollEnable?: boolean; children?: JSX.Element };
 
 const ScreenWrapper = ({ scrollEnable = false, children, ...rest }: Props) => {
   return (

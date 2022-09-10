@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { RectButtonProps } from 'react-native-gesture-handler';
-import If from '../If';
 
+import If from '../If';
 import { ButtonContent, Loading, Title, Wrapper } from './styles';
 
 type Props = {

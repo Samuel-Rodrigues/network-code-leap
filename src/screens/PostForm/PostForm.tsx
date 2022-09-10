@@ -40,46 +40,48 @@ const PostForm = ({
 
   return (
     <Wrapper scrollEnable>
-      <If condition={!isIOS}>
-        <BoxBackButton>
-          <BackButton />
-        </BoxBackButton>
-      </If>
-      <Header>
-        <UserIcon />
-        <UserName>{username}</UserName>
-      </Header>
-      <BoxInputs>
-        <Input
-          label="Title"
-          error={touched?.title ? errors?.title : ''}
-          placeholder="Title"
-          value={values.title}
-          onChangeText={(value) => setFieldValue('title', value)}
-        />
-        <TextAreaInput
-          label="Content"
-          error={touched?.content ? errors?.content : ''}
-          placeholder="Content"
-          value={values.content}
-          onChangeText={(value) => setFieldValue('content', value)}
-        />
-      </BoxInputs>
-      <BoxButtonSubmit>
-        <ButtonSubmit
-          title="Salvar"
-          onPress={submitForm}
-          isSubmitting={isSubmitting}
-        />
-        <If condition={!keyboardShow && !!values?.id}>
-          <ButtonSubmit
-            title="Deletar"
-            onPress={handleDelete}
-            isSubmitting={isDeleting}
-            variant="attention"
-          />
+      <>
+        <If condition={!isIOS}>
+          <BoxBackButton>
+            <BackButton />
+          </BoxBackButton>
         </If>
-      </BoxButtonSubmit>
+        <Header>
+          <UserIcon />
+          <UserName>{username}</UserName>
+        </Header>
+        <BoxInputs>
+          <Input
+            label="Title"
+            error={touched?.title ? errors?.title : ''}
+            placeholder="Title"
+            value={values.title}
+            onChangeText={(value) => setFieldValue('title', value)}
+          />
+          <TextAreaInput
+            label="Content"
+            error={touched?.content ? errors?.content : ''}
+            placeholder="Content"
+            value={values.content}
+            onChangeText={(value) => setFieldValue('content', value)}
+          />
+        </BoxInputs>
+        <BoxButtonSubmit>
+          <ButtonSubmit
+            title="Salvar"
+            onPress={submitForm}
+            isSubmitting={isSubmitting}
+          />
+          <If condition={!keyboardShow && !!values?.id}>
+            <ButtonSubmit
+              title="Deletar"
+              onPress={handleDelete}
+              isSubmitting={isDeleting}
+              variant="attention"
+            />
+          </If>
+        </BoxButtonSubmit>
+      </>
     </Wrapper>
   );
 };

@@ -1,4 +1,5 @@
 import firestore from '@react-native-firebase/firestore';
+
 import { FIRE_STORE_COLLECTIONS } from '~/utils';
 
 export const createUserDoc = async ({ username, email }: User) => {

@@ -6,6 +6,7 @@ import { getCareers } from '~/actions';
 import { NavigationActions } from '~/services';
 import { RootState } from '~/stores';
 import { ROUTES_TYPE, showAlert } from '~/utils';
+
 import Home from './Home';
 
 const HomeContainer = () => {

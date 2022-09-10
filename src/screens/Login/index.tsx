@@ -8,7 +8,6 @@ import {
   signInWithEmailAndPassword,
 } from '~/actions';
 import { RootState } from '~/stores';
-
 import { FORM_LOGIN_TYPE, getAuthError, rangeScroll, showAlert } from '~/utils';
 
 import { initialValues, validationSchema } from './formConfig';

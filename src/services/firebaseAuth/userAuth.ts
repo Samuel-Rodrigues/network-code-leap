@@ -9,6 +9,3 @@ export const signIn = async ({ email, password }: Partial<FormLogin>) =>
 export const signInAnonymously = async () => await auth().signInAnonymously();
 
 export const signOut = async () => await auth().signOut();
-
-export const sendPasswordResetEmail = async (email: string) =>
-  await auth().sendPasswordResetEmail(email);

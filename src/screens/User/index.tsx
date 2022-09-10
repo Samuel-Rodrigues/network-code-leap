@@ -30,7 +30,6 @@ const User = () => {
 
   const guestMessage = 'Create an account to have data';
 
-  // TODO tratamento quando ficar signOut
   const handleSignOut = () => {
     dispatch(signOut());
   };

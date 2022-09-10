@@ -1,5 +1,7 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
+
 import { CAREERS_ACTIONS_TYPE } from '~/utils';
+
 import {
   createCareerReq,
   deleteCareerReq,

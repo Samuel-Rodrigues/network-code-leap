@@ -1,6 +1,7 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 
 import { REDUCERS_TYPE } from '~/utils';
+
 import {
   createUserAccount,
   signInAnonymously,

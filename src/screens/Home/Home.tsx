@@ -6,7 +6,9 @@ import {
   StatusBar,
   TouchableOpacity,
 } from 'react-native';
+
 import { If, Logo } from '~/components';
+
 import {
   BoxContent,
   BoxName,
@@ -47,10 +49,6 @@ const Home = ({
 }: Props) => {
   const scrollRef = useRef<FlatList>(null);
   const scrollY = useRef(new Animated.Value(0)).current;
-
-  // TODO usar após criacao do post
-  // const resetPositionScroll = () =>
-  //   scrollRef?.current?.scrollToOffset({ animated: true, offset: 0 });
 
   return (
     <Wrapper>

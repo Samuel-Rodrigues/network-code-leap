@@ -1,4 +1,5 @@
 import * as yup from 'yup';
+
 import { FORM_LOGIN_TYPE } from '~/utils';
 
 export const initialValues: FormLogin = {

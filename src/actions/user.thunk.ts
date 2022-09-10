@@ -1,5 +1,7 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
+
 import { USER_ACTIONS_TYPE } from '~/utils';
+
 import {
   createUserAccountReq,
   signInAnonymouslyReq,

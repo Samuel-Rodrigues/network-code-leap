@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { logoImage } from '~/assets';
 
 import { Wrapper } from './styles';

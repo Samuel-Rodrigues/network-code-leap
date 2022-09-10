@@ -1,6 +1,7 @@
 import { RFValue } from 'react-native-responsive-fontsize';
 import styled from 'styled-components/native';
 import { FontAwesome } from '@expo/vector-icons';
+
 import Typography from '../Typography';
 
 type FocusProps = { focused: boolean };
