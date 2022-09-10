@@ -4,7 +4,7 @@ import { useFocusEffect } from '@react-navigation/native';
 
 import { getCareers } from '~/actions';
 import { NavigationActions } from '~/services';
-import { RootState } from '~/stores';
+import { RootState, TypedDispatch } from '~/stores';
 import { ROUTES_TYPE, showAlert } from '~/utils';
 
 import Home from './Home';
@@ -12,7 +12,7 @@ import Home from './Home';
 const HomeContainer = () => {
   const { navigate } = NavigationActions;
 
-  const dispatch = useDispatch<any>();
+  const dispatch = useDispatch<TypedDispatch>();
   const {
     career: { isSubmitting, list, offset },
     user: { user },

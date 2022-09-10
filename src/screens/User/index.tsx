@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { signOut } from '~/actions';
 import { BackButton } from '~/components';
-import { RootState } from '~/stores';
+import { RootState, TypedDispatch } from '~/stores';
 
 import {
   Body,
@@ -26,7 +26,7 @@ const User = () => {
     user: { user },
   } = useSelector((store: RootState) => store);
 
-  const dispatch = useDispatch<any>();
+  const dispatch = useDispatch<TypedDispatch>();
 
   const guestMessage = 'Create an account to have data';
 

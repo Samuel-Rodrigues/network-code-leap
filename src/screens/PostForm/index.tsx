@@ -2,11 +2,11 @@ import React from 'react';
 import { Formik } from 'formik';
 import { Alert } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from 'src/stores';
 import { RouteProp } from '@react-navigation/native';
 
 import { createCareer, deleteCareer, editCareer } from '~/actions';
 import { NavigationActions } from '~/services';
+import { RootState, TypedDispatch } from '~/stores';
 import { ROUTES_TYPE, showAlert, useRoute } from '~/utils';
 
 import { initialValues, validationSchema } from './formConfig';
@@ -21,7 +21,7 @@ const PostFormContainer = () => {
     user: { user },
     career: { isSubmitting, isDeleting },
   } = useSelector((store: RootState) => store);
-  const dispatch = useDispatch<any>();
+  const dispatch = useDispatch<TypedDispatch>();
 
   const initialDataValues = !!params?.career ? params.career : initialValues;
 

@@ -1,5 +1,6 @@
-import { combineReducers } from 'redux';
+import { AnyAction, combineReducers } from 'redux';
 import { persistReducer, persistStore } from 'redux-persist';
+import { ThunkAction, ThunkDispatch } from 'redux-thunk';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { configureStore } from '@reduxjs/toolkit';
 
@@ -32,3 +33,10 @@ export const persist = persistStore(store);
 
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
+export type TypedDispatch = ThunkDispatch<RootState, any, AnyAction>;
+export type TypedThunk<ReturnType = void> = ThunkAction<
+  ReturnType,
+  RootState,
+  unknown,
+  AnyAction
+>;

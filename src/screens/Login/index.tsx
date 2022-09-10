@@ -7,7 +7,7 @@ import {
   signInAnonymously,
   signInWithEmailAndPassword,
 } from '~/actions';
-import { RootState } from '~/stores';
+import { RootState, TypedDispatch } from '~/stores';
 import { FORM_LOGIN_TYPE, getAuthError, rangeScroll, showAlert } from '~/utils';
 
 import { initialValues, validationSchema } from './formConfig';
@@ -21,7 +21,7 @@ const LoginContainer = () => {
   );
 
   const { user } = useSelector((state: RootState) => state);
-  const dispatch = useDispatch<any>();
+  const dispatch = useDispatch<TypedDispatch>();
 
   const toggleValidateAfterSubmit = () =>
     setValidateAfterSubmit(!validateAfterSubmit);
