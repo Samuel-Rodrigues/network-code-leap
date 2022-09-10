@@ -119,13 +119,17 @@ A arquitetura deste projeto foi pensada para ser escalável e duradoura. Segue u
 - Documentação recheada e [APIs](https://docs.expo.dev/versions/latest/) `frequentimente atualizadas`
 - Não vi `nenhuma desvantagem` em relação ao `react-native CLI`
 
-### [Material](https://www.react-native-material.com/docs/getting-started)
-
-- Interface bonita da google com vários componentes prontos para serem utilizados
-
 ### [Navigation](https://reactnavigation.org/docs/getting-started/)
 
 - Lida com toda parte de `navegação` da aplicação `stack`, `tab` etc
+
+### [Cloud Firestore](https://firebase.google.com/docs/firestore)
+
+- Utilizado para salvar username do usuario quando o mesmo realizar um cadastro na aplicação
+
+### [Firebase Authentication](https://firebase.google.com/docs/auth)
+
+- Lida com toda parte de autenticação por senha e login anônimo
 
 ### [Type script](https://reactnative.dev/docs/typescript)
 
