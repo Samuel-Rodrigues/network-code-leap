@@ -139,7 +139,7 @@ A arquitetura deste projeto foi pensada para ser escalável e duradoura. Segue u
 - [SKD atualizada](https://docs.expo.dev/development/compatibility/) com as mais `novas` `features` do `react-native`
 - `Acesso` aos projetos `Android` e `IOS` (expo bare workflow)
 - Documentação recheada e [APIs](https://docs.expo.dev/versions/latest/) `frequentimente atualizadas`
-- Não vi `nenhuma desvantagem` em relação ao `react-native CLI`
+- Não observei `nenhuma desvantagem` em relação ao `react-native CLI`
 
 ### [Navigation](https://reactnavigation.org/docs/getting-started/)
 
