@@ -104,7 +104,7 @@ $ git clone https://github.com/Samuel-Rodrigues/network-code-leap.git
 $ npm install
 ```
 
-- Instale dependências do IOS
+- Instale as dependências do IOS
 
 ```bash
 $ cd ios && pod install && cd ..
@@ -117,7 +117,7 @@ $ cd ios && pod install && cd ..
 $ npm run android
 
 #com IOS
-npm run ios
+$ npm run ios
 ```
 
 <br/>
