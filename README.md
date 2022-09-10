@@ -1,6 +1,61 @@
-# Template react-native-expo
+# Network - Code leap
 
 <br/>
+
+## 🤖 Prints Android
+<table>
+  <thead><tr><td>Create an account</td><td>Guest mode</td><td>Home</td><td>Post</td><td>User</td></tr></thead>
+  <tbody>
+  <tr>
+<td>
+
+![create an account](https://user-images.githubusercontent.com/28707053/189486143-3b036334-9864-4982-bd40-b8005d462101.png)
+</td>
+<td>
+
+![guest mode](https://user-images.githubusercontent.com/28707053/189486184-66c4d689-dcbe-4434-a122-e31d6237ecd7.png)
+</td>
+<td>
+
+![home](https://user-images.githubusercontent.com/28707053/189486207-713ac363-cf01-4735-a0ab-3aca7b48b61a.png)
+</td>
+<td>
+
+![add post](https://user-images.githubusercontent.com/28707053/189486437-4e45c320-45b2-4dc3-8d2f-9c3625404d72.png)
+</td>
+<td>
+
+![user](https://user-images.githubusercontent.com/28707053/189486306-0bb3c615-661f-49d5-9b22-46d8ae306c83.png)
+</td>
+    </tr>
+  </tbody>
+</table>
+
+## 📱 Prints iOS
+
+<table>
+  <thead><tr><td>Create an account</td><td>Guest mode</td><td>Home</td><td>User</td></tr></thead>
+  <tbody>
+  <tr>
+<td>
+
+![Screen Shot 2022-09-10 at 10 15 44](https://user-images.githubusercontent.com/28707053/189486371-ff822a43-cfbc-4f0e-8807-f2f4b20a6b09.png)
+</td>
+<td>
+
+![Screen Shot 2022-09-10 at 10 15 58](https://user-images.githubusercontent.com/28707053/189486387-f99b7d1e-126a-4b77-ac96-91a9f23996f3.png)
+</td>
+<td>
+
+![Screen Shot 2022-09-10 at 10 16 19](https://user-images.githubusercontent.com/28707053/189486399-9f05e6ed-1013-4311-8e7a-4ada6ec95b2c.png)
+</td>
+<td>
+
+![Screen Shot 2022-09-10 at 10 16 25](https://user-images.githubusercontent.com/28707053/189486404-8257825e-eaad-40f2-bffe-09fb728bb52e.png)
+</td>
+    </tr>
+  </tbody>
+</table>
 
 # 🚀 Começando
 
