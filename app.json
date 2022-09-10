@@ -1,0 +1,8 @@
+{
+  "expo": {
+    "name": "codeleap",
+    "slug": "codeleap",
+    "version": "1.0.0",
+    "assetBundlePatterns": ["**/*"]
+  }
+}

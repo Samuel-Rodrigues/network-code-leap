@@ -1,0 +1,33 @@
+{
+  "react-native-styled": {
+    "prefix": "rn-styled",
+    "body": [
+      "import styled from 'styled-components/native'",
+      "",
+      "export const Wrapper = styled.View``",
+      "",
+      ""
+    ],
+    "description": ""
+  },
+  "react-native-component": {
+    "prefix": "rn-component",
+    "body": [
+      "import React from 'react';",
+      "import { Wrapper } from './styles';",
+      "",
+      "type Props = {};",
+      "",
+      "const Container = ({}: Props) => <Wrapper></Wrapper>;",
+      "",
+      "export default Container;",
+      ""
+    ],
+    "description": ""
+  },
+  "react-native-enum": {
+    "prefix": "rn-enum",
+    "body": ["export enum ENUM_NAME {", "  KEY = 'value',", "}"],
+    "description": "Create enum template"
+  }
+}
