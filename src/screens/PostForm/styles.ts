@@ -33,7 +33,7 @@ export const Header = styled.View`
   flex-direction: row;
 `;
 
-export const UserName = styled(Typography).attrs({
+export const Title = styled(Typography).attrs({
   flexShrink: 1,
   numberOfLines: 1,
 })`

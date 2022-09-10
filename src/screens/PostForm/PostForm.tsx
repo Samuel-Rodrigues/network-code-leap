@@ -13,30 +13,26 @@ import {
   Header,
   Input,
   TextAreaInput,
+  Title,
   UserIcon,
-  UserName,
   Wrapper,
 } from './styles';
 
 type Props = {
   isSubmitting: boolean;
-  username?: string;
   handleDelete: () => void;
   isDeleting: boolean;
 };
 
 const isIOS = Platform.OS === 'ios';
 
-const PostForm = ({
-  isSubmitting,
-  handleDelete,
-  username,
-  isDeleting,
-}: Props) => {
+const PostForm = ({ isSubmitting, handleDelete, isDeleting }: Props) => {
   const { values, setFieldValue, submitForm, errors, touched } =
     useFormikContext<Partial<Career>>();
 
   const { keyboardShow } = useKeyboardListener();
+
+  const isEdit = !!values?.id;
 
   return (
     <Wrapper scrollEnable>
@@ -48,7 +44,7 @@ const PostForm = ({
         </If>
         <Header>
           <UserIcon />
-          <UserName>{username}</UserName>
+          <Title>{isEdit ? 'Edit item' : `What's on your mind?`}</Title>
         </Header>
         <BoxInputs>
           <Input
@@ -68,13 +64,13 @@ const PostForm = ({
         </BoxInputs>
         <BoxButtonSubmit>
           <ButtonSubmit
-            title="Salvar"
+            title={isEdit ? 'Save' : 'Create'}
             onPress={submitForm}
             isSubmitting={isSubmitting}
           />
           <If condition={!keyboardShow && !!values?.id}>
             <ButtonSubmit
-              title="Deletar"
+              title="Delete"
               onPress={handleDelete}
               isSubmitting={isDeleting}
               variant="attention"

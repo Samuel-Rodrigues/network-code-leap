@@ -5,7 +5,6 @@ import styled from 'styled-components/native';
 export const Wrapper = styled<any>(FastImage).attrs({
   resizeMode: FastImage.resizeMode.contain,
 })`
-  width: 100%
-  height: ${RFValue(50)}px;
-
+  width: 100%;
+  height: ${RFValue(40)}px;
 `;

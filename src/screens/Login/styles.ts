@@ -78,9 +78,15 @@ export const ButtonHeader = styled(Typography)`
 
 export const Title = styled(Typography)`
   margin: ${RFPercentage(3)}px 0;
-  font-size: ${RFValue(26)}px;
+  font-size: ${RFValue(20)}px;
   font-weight: bold;
   color: ${({ theme }) => theme.colors.primary};
+`;
+
+export const TextWelcome = styled(Typography)`
+  font-size: ${RFValue(16)}px;
+  color: ${({ theme }) => theme.colors.primary};
+  margin-bottom: ${RFValue(10)}px;
 `;
 
 export const Body = styled.View`

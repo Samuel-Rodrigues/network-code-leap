@@ -15,6 +15,7 @@ import {
   Footer,
   HeaderContent,
   ITEM_BAR_WIDTH,
+  TextWelcome,
   Wrapper,
 } from './styles';
 
@@ -111,6 +112,7 @@ const Login = ({
       >
         {formsContent}
       </ScrollView>
+      <TextWelcome>Welcome to CodeLeap network!</TextWelcome>
       <Logo />
       <Footer />
     </Wrapper>

@@ -44,12 +44,12 @@ const PostFormContainer = () => {
   };
 
   const handleDelete = async () => {
-    Alert.alert('Delete post?', '', [
+    Alert.alert('Are you sure you want to delete this item?', '', [
       {
         text: 'Cancel',
         style: 'cancel',
       },
-      { text: 'delete', onPress: deletePost },
+      { text: 'ok', onPress: deletePost },
     ]);
   };
 
@@ -70,7 +70,6 @@ const PostFormContainer = () => {
       validationSchema={validationSchema}
     >
       <PostForm
-        username={user?.username}
         isSubmitting={isSubmitting}
         isDeleting={isDeleting}
         handleDelete={handleDelete}
