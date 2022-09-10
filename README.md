@@ -57,6 +57,28 @@
   </tbody>
 </table>
 
+# 🏗 Arquitetura
+<details><summary>Redux</summary>
+ - Os slices são responsáveis por armazenar os state da aplicação. Todo tipo de informação que possa ser utilizada em mais de um container ou component deve ser armazenada em um reducer. O reducer / slice também fica responsável por ouvir as actions e tratar os efeitos colaterais.
+</details>
+
+<details><summary>Actions</summary>
+ - São responsáveis por fazer as requests para APIs e serviços da aplicação
+</details>
+
+<details><summary>Components</summary>
+ - Todos os components visuais compartilhados em mais de uma screen ficam neste folder.
+</details>
+
+<details><summary>Screens</summary>
+ - Telas / interfaces que possuem rotas próprias.
+</details>
+
+<details><summary>Utils</summary>
+ - Neste folder ficam todos os helpers, enums e modules que possam facilitar o gerenciamento de dependências externas no projeto.
+</details>
+
+
 # 🚀 Começando
 
 ### 📋 Pré-requisitos
@@ -110,7 +132,7 @@ $ npm run lint
 
 # 🛠️ Construído com
 
-A arquitetura deste projeto foi pensada para ser escalável e duradoura. Segue uma explicação clara e objetiva de cada biblioteca / método utilizado
+A arquitetura deste projeto foi pensada para ser escalável e duradoura. Segue uma explicação objetiva de algumas das bibliotecas / métodos utilizados
 
 ### [Expo](https://docs.expo.dev/)
 
@@ -125,7 +147,7 @@ A arquitetura deste projeto foi pensada para ser escalável e duradoura. Segue u
 
 ### [Cloud Firestore](https://firebase.google.com/docs/firestore)
 
-- Utilizado para salvar username do usuario quando o mesmo realizar um cadastro na aplicação
+- Utilizado para salvar username do usuário quando o mesmo realizar um cadastro na aplicação
 
 ### [Firebase Authentication](https://firebase.google.com/docs/auth)
 
@@ -143,7 +165,7 @@ A arquitetura deste projeto foi pensada para ser escalável e duradoura. Segue u
 
 ### [Redux Toolkit](https://redux-toolkit.js.org/)
 
-- O Redux ficou muito conhecido com o amplo uso da `arquitetura Flux`, trazendo uma boa abordagem para `gerenciar estado` da aplicação. Com o passar do tempo, foi observado que o código necessário estava ficando custoso / verboso e aumentava muito a complexidade do projeto, por este motivo surgiu a nova forma de utiliar essa lib - O `Redux toolkit` faz uma `abastração do redux` e diminui bastante os arquivos que precisariamos para usar o redux nativamente.
+- O Redux ficou muito conhecido com o amplo uso da `arquitetura Flux`, trazendo uma boa abordagem para `gerenciar estado` da aplicação. Com o passar do tempo, foi observado que o código necessário estava ficando custoso / verboso e aumentava muito a complexidade do projeto, por este motivo surgiu a nova forma de utilizar essa lib - O `Redux toolkit` faz uma `abstração do redux` e diminui bastante os arquivos que precisamos para usar o redux nativamente.
 
 ### [Styled components](https://styled-components.com/)
 
@@ -152,17 +174,14 @@ A arquitetura deste projeto foi pensada para ser escalável e duradoura. Segue u
 
 ### [Path mapping](https://reactnative.dev/docs/typescript)
 
-- Os `alias` personalizados nos permite fazer `imports` mais bonitos e mais fácies de utilizar.
+- Os `alias` personalizados nos permite fazer `imports` mais bonitos e mais fáceis de utilizar.
   <details><summary>Exemplo</summary>
   <img width="676" alt="image" src="https://user-images.githubusercontent.com/28707053/187322870-83d0f2b5-c6ed-40a7-9829-dafd46971b0a.png">
 </details>
 
 ### [Snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
 
-- A utilização de snippets é um forma de criamos `modelos` para alguns tipos de `códigos` da aplicação. a utilização por todos membros da equipe vai garantir uma fácil manuntenção e `padronização` de componentes / arquivos.
+- A utilização de snippets é um forma de criarmos `modelos` para alguns tipos de `códigos` da aplicação. A utilização por todos membros da equipe vai garantir uma fácil manutenção e `padronização` de componentes / arquivos.
   <details><summary>Exemplo</summary>
   <img width="838" alt="image" src="https://user-images.githubusercontent.com/28707053/187322906-bda63546-9dd2-441c-bea1-054e45d59ff0.png">
 </details>
-
-
-
