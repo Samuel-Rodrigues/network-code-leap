@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "start": "expo start --dev-client",
-    "android": "expo run:android",
-    "ios": "expo run:ios",
+    "android": "npx react-native run-android",
+    "ios": "npx react-native run-ios",
     "web": "expo start --web",
     "lint": "tsc && eslint '*/**/*.{js,jsx,ts,tsx}'"
   },

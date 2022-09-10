@@ -23,7 +23,7 @@ export const ViewAnimated = styled(Animated.View).attrs(({ theme }) => ({
   margin-bottom: ${RFValue(18)}px;
   elevation: 30;
   border-radius: ${RFValue(10)}px;
-  padding: ${RFValue(20)}px;
+  padding: ${({ theme }) => RFValue(theme.marginTheme)}px;
   justify-content: center;
 `;
 

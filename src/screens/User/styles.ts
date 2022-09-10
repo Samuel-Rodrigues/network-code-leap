@@ -16,7 +16,7 @@ export const Wrapper = styled.View`
 
 export const BoxBackButton = styled.View`
   margin: ${RFValue(6)}px 0;
-  left: -15px;
+  left: -${RFValue(13)}px;
 `;
 
 export const Header = styled.View`

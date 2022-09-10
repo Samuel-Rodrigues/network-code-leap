@@ -9,7 +9,6 @@
 O que você precisa para usar esse projeto?
 
 - Ambiente react-native
-- [Expo CLI](https://docs.expo.dev/)
 - [Node LTS](https://nodejs.org/en/)
 
 <br/>
@@ -19,7 +18,7 @@ O que você precisa para usar esse projeto?
 - Clone o projeto para sua máquina
 
 ```bash
-$ git clone https://github.com/Samuel-Rodrigues/template-react-native-expo.git
+$ git clone https://github.com/Samuel-Rodrigues/network-code-leap.git
 ```
 
 - Instale as dependências
@@ -37,9 +36,6 @@ $ cd ios && pod install && cd ..
 # 🔧 Rodando projeto local
 
 ```bash
-#com expo
-$ npx expo start
-
 #com Android
 $ npm run android
 

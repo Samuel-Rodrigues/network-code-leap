@@ -78,7 +78,7 @@ export const ButtonHeader = styled(Typography)`
 
 export const Title = styled(Typography)`
   margin: ${RFPercentage(3)}px 0;
-  font-size: ${RFValue(26)}px
+  font-size: ${RFValue(26)}px;
   font-weight: bold;
   color: ${({ theme }) => theme.colors.primary};
 `;
