@@ -59,6 +59,7 @@ export const TitleContent = styled(Typography).attrs({
 
 export const ScrollTextContent = styled.View`
   justify-content: center;
+  padding: ${RFValue(10)}px;
 `;
 
 export const TextContent = styled(Typography)`
@@ -67,9 +68,14 @@ export const TextContent = styled(Typography)`
   line-height: ${RFValue(18)}px;
   font-size: ${RFValue(12)}px;
   text-align: justify;
-  padding: ${RFValue(10)}px;
-
   color: ${({ theme }) => theme.colors.primary_dark};
+`;
+
+export const Date = styled(Typography)`
+  font-size: ${RFValue(12)}px;
+  margin-top: ${RFValue(10)}px;
+  color: ${({ theme }) => theme.colors.text};
+  text-align: right;
 `;
 
 export const UserData = styled.View`

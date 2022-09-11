@@ -27,7 +27,7 @@ export default function App() {
               navigatorRef: NavigationContainerRef<any>,
             ): void => NavigationActions.setTopLevelNavigator(navigatorRef)}
           />
-          <Toast visibilityTime={3000} topOffset={40} config={toastConfig} />
+          <Toast visibilityTime={3000} topOffset={30} config={toastConfig} />
         </ThemeProvider>
       </PersistGate>
     </Provider>

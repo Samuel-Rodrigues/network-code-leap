@@ -8,10 +8,12 @@ import {
 } from 'react-native';
 
 import { If, Logo } from '~/components';
+import { formatDateToCalendar } from '~/utils';
 
 import {
   BoxContent,
   BoxName,
+  Date,
   EditIcon,
   FooterLoading,
   ScrollTextContent,
@@ -92,6 +94,7 @@ const Home = ({
               </BoxContent>
               <ScrollTextContent>
                 <TextContent>{item.content}</TextContent>
+                <Date>{formatDateToCalendar(item.created_datetime)}</Date>
               </ScrollTextContent>
             </ViewAnimated>
           )}
