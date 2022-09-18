@@ -86,6 +86,7 @@
 O que você precisa para usar esse projeto?
 
 - Ambiente react-native
+- Expo CLi (npm install -g expo-cli)
 - [Node LTS](https://nodejs.org/en/)
 
 <br/>
@@ -96,6 +97,11 @@ O que você precisa para usar esse projeto?
 
 ```bash
 $ git clone https://github.com/Samuel-Rodrigues/network-code-leap.git
+```
+
+- Para usar o Expo Go, certifique-se de está na branch run-expo
+```
+ git checkout run-expo
 ```
 
 - Instale as dependências
