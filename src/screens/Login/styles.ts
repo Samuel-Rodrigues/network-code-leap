@@ -2,6 +2,7 @@ import { Animated, Dimensions, Platform } from 'react-native';
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 import styled from 'styled-components/native';
+import { FontAwesome } from '@expo/vector-icons';
 
 import { Button, TextInput, Typography } from '~/components';
 
@@ -110,4 +111,13 @@ export const Footer = styled.View`
   background-color: ${({ theme }) => theme.colors.primary};
   border-top-left-radius: ${borderRadiusHeader}px;
   border-top-right-radius: ${borderRadiusHeader}px;
+  margin-top: ${RFValue(20)}px;
+`;
+
+export const Icon = styled(FontAwesome).attrs(({ theme }) => ({
+  size: RFValue(40),
+  color: theme.colors.primary,
+  name: 'connectdevelop',
+}))`
+  margin: ${RFValue(20)}px 0;
 `;

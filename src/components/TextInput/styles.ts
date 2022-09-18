@@ -50,7 +50,9 @@ export const Icon = styled(Feather).attrs<IconProps>(({ theme, error }) => ({
   color: error ? theme.colors.attention : theme.colors.primary_dark,
 }))``;
 
-export const Input = styled.TextInput`
+export const Input = styled.TextInput.attrs(({ theme }) => ({
+  placeholderTextColor: theme.colors.text,
+}))`
   flex: 1;
   margin-left: ${RFValue(5)}px;
   height: 100%;

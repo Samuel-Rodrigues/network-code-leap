@@ -1,10 +1,10 @@
 import React from 'react';
 import { StatusBar } from 'react-native';
-import 'react-native-gesture-handler';
 import Toast from 'react-native-toast-message';
-
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
+import 'react-native-gesture-handler';
+
 import { ThemeProvider } from 'styled-components';
 
 import('./config/ReactotronConfig');

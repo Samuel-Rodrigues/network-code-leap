@@ -1,20 +1,19 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { signOut } from '~/actions';
 import { BackButton } from '~/components';
 import { RootState, TypedDispatch } from '~/stores';
+
+import { singOut } from '../../redux/usersSlice';
 
 import {
   Body,
   BoxBackButton,
   ButtonLogOut,
   Divider,
-  Email,
   Footer,
   Header,
   LogOutIcon,
-  TextInfo,
   TextLogOut,
   UserIcon,
   Username,
@@ -28,10 +27,8 @@ const User = () => {
 
   const dispatch = useDispatch<TypedDispatch>();
 
-  const guestMessage = 'Create an account to have data';
-
   const handleSignOut = () => {
-    dispatch(signOut());
+    dispatch(singOut());
   };
 
   return (
@@ -44,10 +41,7 @@ const User = () => {
         <Username>{user.username}</Username>
         <Divider />
       </Header>
-      <Body>
-        <TextInfo>E-mail:</TextInfo>
-        <Email>{user.email ? user.email : guestMessage}</Email>
-      </Body>
+      <Body />
       <Footer>
         <Divider />
         <ButtonLogOut onPress={handleSignOut}>

@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import auth, { FirebaseAuthTypes } from '@react-native-firebase/auth';
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 import { PostForm } from '~/screens';
+import { RootState } from '~/stores';
 import { ROUTES_TYPE, STACKS_TYPE, createNativeStackNavigator } from '~/utils';
 
 import PrivateRoutes from './PrivateRoutes';
@@ -10,17 +11,7 @@ import PublicRoutes from './PublicRoutes';
 const Stack = createNativeStackNavigator();
 
 export function MainRoutes() {
-  const [userAuth, setUserAuth] = useState<FirebaseAuthTypes.User | null>(null);
-
-  const hasAuthUser = () => {
-    auth().onAuthStateChanged((user) => {
-      setUserAuth(user);
-    });
-  };
-
-  useEffect(() => {
-    return hasAuthUser();
-  }, []);
+  const { user } = useSelector((state: RootState) => state);
 
   return (
     <Stack.Navigator
@@ -31,7 +22,7 @@ export function MainRoutes() {
       }}
       initialRouteName={STACKS_TYPE.STACK_PUBLIC}
     >
-      {userAuth ? (
+      {!!user?.user?.username ? (
         <>
           <Stack.Screen
             name={STACKS_TYPE.STACK_PRIVATE}

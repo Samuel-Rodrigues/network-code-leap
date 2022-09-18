@@ -35,10 +35,6 @@ export const UserIcon = styled(Feather).attrs(({ theme }) => ({
   size: RFValue(46),
 }))``;
 
-export const TextInfo = styled(Typography)`
-  font-size: ${RFValue(15)}px;
-`;
-
 export const Body = styled.View`
   flex: 1;
 `;
@@ -62,11 +58,6 @@ export const LogOutIcon = styled(Feather).attrs(({ theme }) => ({
 export const TextLogOut = styled(Typography)`
   color: ${({ theme }) => theme.colors.text};
   font-size: ${RFValue(15)}px;
-`;
-
-export const Email = styled(Typography)`
-  color: ${({ theme }) => theme.colors.text};
-  font-size: ${RFValue(16)}px;
 `;
 
 export const Divider = styled.View`

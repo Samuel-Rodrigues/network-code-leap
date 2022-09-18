@@ -98,5 +98,5 @@ export const FooterLoading = styled.ActivityIndicator.attrs(({ theme }) => ({
   size: RFValue(40),
   color: theme.colors.primary,
 }))`
-  margin-top: ${RFValue(5)}px;
+  margin-top: ${RFValue(8)}px;
 `;

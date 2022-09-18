@@ -1,8 +1,7 @@
+import { API_BASE } from '@env';
 import axios from 'axios';
 
-import { ENV } from '~/utils';
-
 export const codeLeapApi = axios.create({
-  baseURL: ENV.REACT_APP_CODE_LEAP_API,
+  baseURL: API_BASE,
   timeout: 10000,
 });

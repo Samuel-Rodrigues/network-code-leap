@@ -5,7 +5,6 @@
 #import <React/RCTRootView.h>
 #import <React/RCTLinkingManager.h>
 #import <React/RCTConvert.h>
-#import <Firebase.h>
 
 #import <React/RCTAppSetupUtils.h>
 

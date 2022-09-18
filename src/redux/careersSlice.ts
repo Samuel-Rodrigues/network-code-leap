@@ -1,12 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-import {
-  createCareer,
-  deleteCareer,
-  editCareer,
-  getCareers,
-  signOut,
-} from '~/actions';
+import { createCareer, deleteCareer, editCareer, getCareers } from '~/actions';
 import { REDUCERS_TYPE } from '~/utils';
 
 export interface CareerState {
@@ -97,7 +91,6 @@ export const careerSlice = createSlice({
     builder.addCase(deleteCareer.rejected, (state) => {
       state.isDeleting = false;
     });
-    builder.addCase(signOut.fulfilled, () => INITIAL_STATE);
   },
 });
 
