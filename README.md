@@ -110,14 +110,11 @@ $ npm install
 $ cd ios && pod install && cd ..
 ```
 
-# 🔧 Rodando projeto local
+# 🔧 Rodando projeto com Expo
 
 ```bash
-#com Android
-$ npm run android
+$ npx expo start --clear
 
-#com IOS
-$ npm run ios
 ```
 
 <br/>
